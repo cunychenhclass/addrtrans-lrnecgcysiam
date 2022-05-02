@@ -1,0 +1,34 @@
+Paging
+
+A memory management scheme that permits a process's physical address space to be non contiguous.
+Which means to not share a common border or touch with in the address spaces.
+When we use Paging we avoid the external fragmentation and the associate need for compation, there are two probelms that 
+plague contiguous memory allocation.
+
+Paging is implemented through cooperation between the operating system and the computer
+hardware. 
+
+Basic method for implementing paging involves breaking the physical memory into 
+fixed sized blocks called frames and frames and breaking logical memory into 
+blocks of the same size called pages. When a process is to be executed, its
+pages are loaded into any available memoryframes from there source.
+   
+    page num     page offset 
+[       p      |      d     ]
+      (m - n)         n
+
+                            frame number
+    [page 0]        0[1]            0[]
+    [page 1]        1[4]            1[page 0]
+    [page 2]        2[3]            2[      ]
+    [page 3]        3[7]            3[page 2]
+logical memory   page table         4[page 1]
+                                    5[      ]
+                                    6[      ]
+                                    7[page 3]   
+                                      physical 
+                                       memory
+
+
+
+                                       
