@@ -1,6 +1,6 @@
 Paging
 
-A memory management scheme that permits a process's physical address space to be non contiguous.
+A memory management scheme that permeits a process's physical address space to be non contiguous.
 Which means to not share a common border or touch with in the address spaces.
 When we use Paging we avoid the external fragmentation and the associate need for compation, there are two probelms that 
 plague contiguous memory allocation.
